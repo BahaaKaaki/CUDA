@@ -135,6 +135,7 @@ main(void)
 
 	// Copy the device result vector in device memory to the host result vector
 	// in host memory.
+	
 	printf("Copy output data from the CUDA device to the host memory\n");
 
 	cudaMemcpy(h_C, d_C, size, cudaMemcpyDeviceToHost);
